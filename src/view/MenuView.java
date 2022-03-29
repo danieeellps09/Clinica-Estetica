@@ -19,6 +19,8 @@ public class MenuView extends javax.swing.JFrame {
      * Creates new form MenuView
      */
     public MenuView() {
+        
+     
         initComponents();
     }
 
@@ -43,12 +45,14 @@ public class MenuView extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Daniel lopes\\Pictures\\Clinica de estetica\\Logo-login.jpg")); // NOI18N
         jLabel2.setText("jLabel2");
 
         jMenu1.setText("Cadastros");
 
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/usuario32-icon.png"))); // NOI18N
         jMenuItem1.setText("Cliente");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,12 +62,18 @@ public class MenuView extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("Serviços");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Agendamento");
 
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/relatorioTrabalho32-icon.png"))); // NOI18N
         jMenuItem3.setText("Agendar");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,15 +90,11 @@ public class MenuView extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1191, Short.MAX_VALUE))
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 842, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 753, Short.MAX_VALUE))
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 842, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -96,17 +102,27 @@ public class MenuView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
+      CadastroCliente cliente = new CadastroCliente();
+      cliente.setVisible(true);// 
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        AgendamentoView agendar;
+        ServicoView agendarservico;
         try {
-            AgendamentoView agendar = new AgendamentoView();
-            agendar.setVisible(true);
+            agendar = new AgendamentoView();
+              agendar.setVisible(true);
+             
         } catch (SQLException ex) {
             Logger.getLogger(MenuView.class.getName()).log(Level.SEVERE, null, ex);
         }
+      
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+           ServicoView  agendarservico = new ServicoView();
+              agendarservico.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments

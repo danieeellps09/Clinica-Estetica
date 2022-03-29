@@ -9,17 +9,21 @@ package model;
  *
  * @author Daniel lopes
  */
-public class Servicos {
+public class Servico {
     
     private int id;
     private String descrição;
-    private float valor;
+    private Double valor;
 
-    public Servicos(int id, String descrição, float valor) {
-        this.id = id;
+    public Servico(String descrição, Double valor) {
         this.descrição = descrição;
         this.valor = valor;
     }
+
+
+
+ 
+ 
 
     public int getId() {
         return id;
@@ -37,18 +41,26 @@ public class Servicos {
         this.descrição = descrição;
     }
 
-    public float getValor() {
+    public Double getValor() {
         return valor;
     }
 
-    public void setValor(float valor) {
+    public void setValor(Double valor) {
         this.valor = valor;
     }
+
+ 
+    
+   public String toString (){
+    
+   return getDescrição();
+   
+   } 
     
     
-    
-    
-    
+    public Double toDouble(){
+    return getValor();
+    }
     
     
     

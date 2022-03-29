@@ -41,10 +41,17 @@ public class LoginController {
               //se ele existir no banco de dados, abrir o menu
                 MenuView telaDeMenu =  new MenuView();
                 telaDeMenu.setVisible(true);
-               
+                LoginView login = new LoginView();
+                login.dispose();
                 
-           }else { JOptionPane.showMessageDialog(null, "Usuario ou senha inválida");}
+           }else { JOptionPane.showMessageDialog(null, "Usuario ou senha inválida");
+           view.getjTextFieldUser().setText("");
+           view.getjPasswordFieldPassword().setText("");
+           
+           }
     }
+
+  
     
     
     
