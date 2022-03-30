@@ -70,19 +70,19 @@ public class CadastroCliente extends javax.swing.JFrame {
                 TextNomeActionPerformed(evt);
             }
         });
-        getContentPane().add(TextNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 256, 34));
+        getContentPane().add(TextNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 294, 240, 30));
 
         jTextTelefone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextTelefoneActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 370, 180, 33));
+        getContentPane().add(jTextTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 373, 200, 30));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("Telefone");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 231, 39));
-        getContentPane().add(jTextEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 460, 298, 30));
+        getContentPane().add(jTextEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 460, 300, 30));
 
         jButton1.setText("SALVAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +98,7 @@ public class CadastroCliente extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 540, 222, 33));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 540, 222, 33));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/ventosa-homem.jpeg"))); // NOI18N
         jLabel6.setText("jLabel6");

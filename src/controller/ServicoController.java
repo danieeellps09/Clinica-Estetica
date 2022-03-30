@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import model.Servico;
 import view.ServicoView;
@@ -41,6 +42,7 @@ private final ServicoView view;
         conexao = new Conexao().getConnection();
            ServicoDAO servicoDao = new ServicoDAO(conexao);
            servicoDao.insert(servicoNovo);
+           JOptionPane.showMessageDialog(null, "Serviço cadastrado com sucesso");
     } catch (SQLException ex) {
         Logger.getLogger(ServicoController.class.getName()).log(Level.SEVERE, null, ex);
     }

@@ -34,24 +34,31 @@ public class AgendamentoController {
     String data = view.getTextData().getText();
     
     Agendamento agendamentoNovo = new Agendamento (cliente,servico,Double.parseDouble(valor),data);
-    
+    this.limpar();
         try {
             Connection conexao = new Conexao().getConnection();
             AgendamentoDAO agendamentoDao = new AgendamentoDAO(conexao);
             agendamentoDao.insert(agendamentoNovo);
             JOptionPane.showMessageDialog(null, "Agendamento feito com sucesso ");
+            
     
         } catch (SQLException ex) {
             Logger.getLogger(AgendamentoController.class.getName()).log(Level.SEVERE, null, ex);
         }
     
     
-    
-    
-    
-    
-    
+ 
     }
+    
+ public void limpar() {
+ 
+
+ 
+  
+ 
+ 
+ 
+ }
     
     
 }

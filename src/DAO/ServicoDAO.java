@@ -40,6 +40,26 @@ public class ServicoDAO {
     }
     
     
+                public void delete (Servico servico) throws SQLException {
+    
+    String sql = "delete from servico where id = ?";
+    PreparedStatement statement = connection.prepareStatement(sql);
+    
+    statement.setInt(1, servico.getId());
+             statement.execute();
+     
+    
+    }
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
           public ArrayList<Servico> selectAll () throws SQLException {
            String sql = "select * from servico";
            PreparedStatement statement = connection.prepareStatement(sql);

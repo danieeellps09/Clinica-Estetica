@@ -38,6 +38,7 @@ public class ServicoView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
         jButtonsServico = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -45,7 +46,9 @@ public class ServicoView extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jButtonCancelar = new javax.swing.JButton();
         jTextFieldValor = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+
+        jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
@@ -57,27 +60,27 @@ public class ServicoView extends javax.swing.JFrame {
                 jButtonsServicoActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonsServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, 170, 50));
+        getContentPane().add(jButtonsServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 170, 50));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel1.setForeground(new java.awt.Color(51, 0, 51));
         jLabel1.setText("CADASTRAR SERVIÇOS");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 501, 65));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 501, 65));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setText("Descrição do Serviço");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, 260, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 240, 30));
 
         jTextFieldDescricao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldDescricaoActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextFieldDescricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 220, 32));
+        getContentPane().add(jTextFieldDescricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 190, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel4.setText("Valor do serviço");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, 220, 36));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 220, 30));
 
         jButtonCancelar.setText("CANCELAR");
         jButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -85,12 +88,12 @@ public class ServicoView extends javax.swing.JFrame {
                 jButtonCancelarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 370, 180, 50));
-        getContentPane().add(jTextFieldValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 270, 180, 32));
+        getContentPane().add(jButtonCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, 180, 50));
+        getContentPane().add(jTextFieldValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 160, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/786c32_421e8b27fd1a4ffe98b3fe1c70311496_mv2.jpg"))); // NOI18N
-        jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 680));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/Florence-estetica.jpg"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 610));
 
         pack();
         setLocationRelativeTo(null);
@@ -170,6 +173,7 @@ public class ServicoView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField jTextFieldDescricao;
     private javax.swing.JTextField jTextFieldValor;
     // End of variables declaration//GEN-END:variables

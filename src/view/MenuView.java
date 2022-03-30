@@ -61,6 +61,7 @@ public class MenuView extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/modificada.jpg"))); // NOI18N
         jMenuItem2.setText("Serviços");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -130,15 +130,15 @@ private     */
                 TextDataActionPerformed(evt);
             }
         });
-        getContentPane().add(TextData, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 110, -1));
+        getContentPane().add(TextData, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 110, 30));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel4.setText("Serviço");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 79, 31));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 70, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel2.setText("Cliente");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 120, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 70, 40));
 
         cbCliente.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -150,11 +150,11 @@ private     */
                 cbClienteActionPerformed(evt);
             }
         });
-        getContentPane().add(cbCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 110, -1));
+        getContentPane().add(cbCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 162, 140, 20));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel3.setText("Valor");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 79, 31));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 50, 30));
 
         jButtonAgendar.setBackground(new java.awt.Color(102, 255, 0));
         jButtonAgendar.setForeground(new java.awt.Color(0, 0, 102));
@@ -164,11 +164,11 @@ private     */
                 jButtonAgendarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonAgendar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 154, 35));
+        getContentPane().add(jButtonAgendar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 160, 40));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel5.setText("Data/hora");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, 31));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, 31));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setText("AGENDAMENTO DE SESSÕES");
@@ -193,7 +193,7 @@ private     */
                 cbServicoActionPerformed(evt);
             }
         });
-        getContentPane().add(cbServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 110, -1));
+        getContentPane().add(cbServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 140, 20));
 
         JButtonAtualizar.setBackground(new java.awt.Color(102, 51, 255));
         JButtonAtualizar.setText("ATUALIZAR");
@@ -226,7 +226,7 @@ private     */
                 jTextFieldValorActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextFieldValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 110, -1));
+        getContentPane().add(jTextFieldValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 110, 30));
 
         TableAgendar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -251,10 +251,10 @@ private     */
         });
         jScrollPane1.setViewportView(TableAgendar);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, 597, 226));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, 620, 230));
 
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Daniel lopes\\Pictures\\Clinica de estetica\\estetica-e-cosmetica.jpg")); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 810, 700));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 700));
 
         pack();
         setLocationRelativeTo(null);
@@ -269,7 +269,7 @@ private     */
     }//GEN-LAST:event_cbClienteActionPerformed
 
     private void jButtonAgendarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAgendarActionPerformed
-     controller.salvarAgendamento();
+  
         try {
             selectTable();
         } catch (SQLException ex) {
@@ -357,7 +357,7 @@ private     */
        
        jTextFieldValor.setText("");
        TextData.setText("");
-       
+       JOptionPane.showMessageDialog(rootPane, "Agendamento atualizado com sucesso");
        
        agendaDao.update(agenda);
             } catch (SQLException ex) {
