@@ -268,12 +268,13 @@
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Daniel lopes\Pictures\Clinica de estetica\estetica-e-cosmetica.jpg"/>
+          <Image iconType="3" name="/view/imagensicon/AgendamentoView.jpg"/>
         </Property>
+        <Property name="text" type="java.lang.String" value="jLabel6"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="830" height="700"/>
+          <AbsoluteConstraints x="-80" y="-70" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

@@ -253,8 +253,9 @@ private     */
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, 620, 230));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Daniel lopes\\Pictures\\Clinica de estetica\\estetica-e-cosmetica.jpg")); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 700));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/AgendamentoView.jpg"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, -70, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -271,6 +272,7 @@ private     */
     private void jButtonAgendarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAgendarActionPerformed
   
         try {
+            controller.salvarAgendamento();
             selectTable();
         } catch (SQLException ex) {
             Logger.getLogger(AgendamentoView.class.getName()).log(Level.SEVERE, null, ex);

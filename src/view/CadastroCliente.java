@@ -100,7 +100,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 540, 222, 33));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/ventosa-homem.jpeg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/CadastroCliente.jpeg"))); // NOI18N
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -20, 1150, 860));
 

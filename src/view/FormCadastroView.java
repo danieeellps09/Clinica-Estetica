@@ -110,7 +110,7 @@ public class FormCadastroView extends javax.swing.JFrame {
         jLabel1.setText("Cadastre-se");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 240, 50));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/emprendedora-suzane-oliveira-esteticista-jessica-moura-fotografia-diadema-sp-7.jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/CadastroUsuario.jpg"))); // NOI18N
         jLabel5.setText("Cadastrar novo usuário");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 880, 580));
 

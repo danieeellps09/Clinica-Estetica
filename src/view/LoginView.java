@@ -94,7 +94,7 @@ public class LoginView extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 310, 140, 30));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/banner-dos-cursos-unisulma-6-1200x675.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagensicon/Login-6-1200x675.png"))); // NOI18N
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 630));
 
